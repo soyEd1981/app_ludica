@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DirtRoadTraveler.mp3-8727e1f5643d442822c5a07814b985f7.mp3str"
+
+[deps]
+
+source_file="res://assets/music/DirtRoadTraveler.mp3"
+dest_files=[ "res://.import/DirtRoadTraveler.mp3-8727e1f5643d442822c5a07814b985f7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AmazingGrace.mp3-7223a92789c8b1e0776977f6a34144fe.mp3str"
+
+[deps]
+
+source_file="res://assets/music/AmazingGrace.mp3"
+dest_files=[ "res://.import/AmazingGrace.mp3-7223a92789c8b1e0776977f6a34144fe.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

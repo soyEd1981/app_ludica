@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Azimuth.mp3-c0951959d67d7193d4902f509714f2f6.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Azimuth.mp3"
+dest_files=[ "res://.import/Azimuth.mp3-c0951959d67d7193d4902f509714f2f6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

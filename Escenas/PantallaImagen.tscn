@@ -1,0 +1,168 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/UI Base Pack/PNG/grey_panel.png" type="Texture" id=1]
+[ext_resource path="res://assets/UI Base Pack/PNG/blue_button11.png" type="Texture" id=2]
+[ext_resource path="res://assets/UI Base Pack/PNG/blue_button10.png" type="Texture" id=3]
+[ext_resource path="res://assets/fonts/Kenney Pixel Square.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Escenas/PantallaImagen.gd" type="Script" id=5]
+[ext_resource path="res://assets/Game Icons/PNG/Black/1x/return.png" type="Texture" id=6]
+[ext_resource path="res://assets/Game Icons/PNG/Black/1x/share2.png" type="Texture" id=7]
+[ext_resource path="res://assets/Game Icons/PNG/Black/1x/door.png" type="Texture" id=8]
+[ext_resource path="res://assets/Game Icons/PNG/White/1x/share2.png" type="Texture" id=9]
+[ext_resource path="res://assets/Game Icons/PNG/White/1x/return.png" type="Texture" id=10]
+[ext_resource path="res://assets/Game Icons/PNG/White/1x/door.png" type="Texture" id=11]
+[ext_resource path="res://assets/Game Icons/PNG/Black/1x/musicOn.png" type="Texture" id=12]
+[ext_resource path="res://assets/Game Icons/PNG/White/1x/musicOn.png" type="Texture" id=13]
+[ext_resource path="res://assets/music/AcousticMeditation2.mp3" type="AudioStream" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 4 )
+
+[node name="PantallaImagen" type="NinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DespliegueImagen" type="TextureRect" parent="."]
+anchor_left = 0.118519
+anchor_top = 0.104167
+anchor_right = 0.890741
+anchor_bottom = 0.449479
+margin_right = 16.0
+margin_bottom = 187.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ContenedorVertical" type="VBoxContainer" parent="."]
+anchor_left = 0.312037
+anchor_top = 0.588021
+anchor_right = 1.25033
+anchor_bottom = 0.816063
+margin_right = -613.36
+margin_bottom = -137.84
+rect_min_size = Vector2( 400, 300 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BotonGaleria" type="TextureButton" parent="ContenedorVertical"]
+margin_right = 400.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 360, 120 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextoGaleria" type="Label" parent="ContenedorVertical/BotonGaleria"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 1 )
+text = "Galería"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonCamara" type="TextureButton" parent="ContenedorVertical"]
+margin_top = 124.0
+margin_right = 400.0
+margin_bottom = 244.0
+rect_min_size = Vector2( 360, 120 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextoCamara" type="Label" parent="ContenedorVertical/BotonCamara"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 1 )
+text = "Cámara"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContenedorHorizontal" type="HBoxContainer" parent="."]
+anchor_left = 0.231
+anchor_top = 0.87
+anchor_right = 0.769
+anchor_bottom = 0.948
+margin_left = 0.519989
+margin_top = -0.400146
+margin_right = -0.520081
+margin_bottom = -0.160156
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonRegresar" type="TextureButton" parent="ContenedorHorizontal"]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonCompartir" type="TextureButton" parent="ContenedorHorizontal"]
+margin_left = 154.0
+margin_right = 304.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonMusica" type="TextureButton" parent="ContenedorHorizontal"]
+margin_left = 308.0
+margin_right = 458.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 13 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonSalir" type="TextureButton" parent="ContenedorHorizontal"]
+margin_left = 462.0
+margin_right = 612.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReproductorMusica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+
+[connection signal="pressed" from="ContenedorVertical/BotonGaleria" to="." method="_on_BotonGaleria_pressed"]
+[connection signal="pressed" from="ContenedorVertical/BotonCamara" to="." method="_on_BotonCamara_pressed"]
+[connection signal="pressed" from="ContenedorHorizontal/BotonRegresar" to="." method="_on_BotonRegresar_pressed"]
+[connection signal="pressed" from="ContenedorHorizontal/BotonCompartir" to="." method="_on_BotonCompartir_pressed"]
+[connection signal="pressed" from="ContenedorHorizontal/BotonMusica" to="." method="_on_BotonMusica_pressed"]
+[connection signal="pressed" from="ContenedorHorizontal/BotonSalir" to="." method="_on_BotonSalir_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LandrasDream.mp3-663bf4d113c89ff144019d854452e519.mp3str"
+
+[deps]
+
+source_file="res://assets/music/LandrasDream.mp3"
+dest_files=[ "res://.import/LandrasDream.mp3-663bf4d113c89ff144019d854452e519.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
